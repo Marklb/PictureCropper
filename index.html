@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Picture Resizer</title>
+        <style media="screen">
+            /**{
+                padding: 0;
+                margin: 0;
+            }*/
+            /*#working-container{
+                display: block;
+                box-sizing: border-box;
+                border: 2px solid rgba(50, 50, 100, 1);
+            }
+            #download-button{
+                width: 150px;
+                background-color: rgba(50,50,100,1);
+                text-align: center;
+            }*/
+        </style>
+        <link rel="stylesheet" href="styles.css">
+        <script src="reimg.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <!-- <p>
+        	<input id="files-upload" type="file">
+        </p> -->
+        <!-- <div id="download-button">Download</div> -->
+        <!-- <div id="working-container"> -->
+            <!-- <canvas id="myCanvas" width="640" height="360"></canvas> -->
+            <!-- <canvas id="myCanvas" width="2000" height="2000"></canvas> -->
+            <!-- <canvas id="myCanvas"></canvas> -->
+        <!-- </div> -->
+
+        <div id="upload-img" class="container">
+            <input id="files-upload-btn" class="file-input-btn" type="file">
+        </div>
+
+        <div id="selection" class="container hidden">
+            <span id="selectionDoneBtn" class="hidden">Done</span>
+            <canvas id="myCanvas"></canvas>
+        </div>
+
+        <div id="done" class="container hidden">
+            <canvas id="myFinalCanvas" width="640" height="360"></canvas>
+        </div>
+
+
+
+
+        <script src="resizer.js" charset="utf-8"></script>
+    </body>
+</html>
