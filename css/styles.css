@@ -59,7 +59,7 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
 }
 
 .container#selection{
-
+  /*margin-top: 10px;*/
 }
 
 .container#done{
@@ -75,16 +75,17 @@ html,body{ margin:0; padding:0; height:100%; width:100%; }
   top: 0;
   left: 0;
   width: 60px;
-  background-color: rgba(30,30,100,.8);
-  color: rgba(30,200,200,1);
+  background-color: rgba(30,30,50,.8);
+  color: rgba(180,180,180,1);
   cursor: default;
   display: block;
   box-sizing: border-box;
   text-align: center;
   padding: 2px;
+  border: 1px solid rgba(40,40,40,1);
 }
 #selectionDoneBtn:hover{
-  border: 1px solid rgba(30,200,200,1);
+  border: 1px solid rgba(60,60,60,1);
 }
 #selectionDoneBtn.hidden{
   overflow: hidden;

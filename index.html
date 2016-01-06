@@ -3,35 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>Picture Resizer</title>
-        <style media="screen">
-            /**{
-                padding: 0;
-                margin: 0;
-            }*/
-            /*#working-container{
-                display: block;
-                box-sizing: border-box;
-                border: 2px solid rgba(50, 50, 100, 1);
-            }
-            #download-button{
-                width: 150px;
-                background-color: rgba(50,50,100,1);
-                text-align: center;
-            }*/
-        </style>
-        <link rel="stylesheet" href="styles.css">
-        <script src="reimg.js" charset="utf-8"></script>
+
+        <!-- Local -->
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <!-- <script src="reimg.js" charset="utf-8"></script> -->
+        <!-- Server -->
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/reimg.js" charset="utf-8"></script>
     </head>
     <body>
-        <!-- <p>
-        	<input id="files-upload" type="file">
-        </p> -->
-        <!-- <div id="download-button">Download</div> -->
-        <!-- <div id="working-container"> -->
-            <!-- <canvas id="myCanvas" width="640" height="360"></canvas> -->
-            <!-- <canvas id="myCanvas" width="2000" height="2000"></canvas> -->
-            <!-- <canvas id="myCanvas"></canvas> -->
-        <!-- </div> -->
 
         <div id="upload-img" class="container">
             <input id="files-upload-btn" class="file-input-btn" type="file">
@@ -46,9 +26,31 @@
             <canvas id="myFinalCanvas" width="640" height="360"></canvas>
         </div>
 
+        <!-- <script src="resizer.js" charset="utf-8"></script> -->
 
 
 
-        <script src="resizer.js" charset="utf-8"></script>
+
+
+
+        <script src="js/common.js" charset="utf-8"></script>
+        <script src="js/picture-manipulator.js" charset="utf-8"></script>
+
+        <script src="js/screen.js" charset="utf-8"></script>
+        <script src="js/screen-upload-img.js" charset="utf-8"></script>
+        <script src="js/screen-selection.js" charset="utf-8"></script>
+        <script src="js/screen-done.js" charset="utf-8"></script>
+
+        <script src="js/selection-box-drag-box.js" charset="utf-8"></script>
+        <script src="js/drag-box/selection-box-drag-box-bottom-left.js" charset="utf-8"></script>
+        <script src="js/drag-box/selection-box-drag-box-bottom-right.js" charset="utf-8"></script>
+        <script src="js/drag-box/selection-box-drag-box-top-left.js" charset="utf-8"></script>
+        <script src="js/drag-box/selection-box-drag-box-top-right.js" charset="utf-8"></script>
+        <script src="js/selection-box.js" charset="utf-8"></script>
+
+        <script type="text/javascript">
+            "use strict";
+            let PicManip = new PictureManipulator();
+        </script>
     </body>
 </html>
