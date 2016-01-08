@@ -23,8 +23,8 @@ class ScreenDone extends Screen {
     // console.log('RatioWidth: '+ratioWidth);
     // console.log('RatioHeight: '+ratioHeight);
 
-    let maxWidth = 30;
-    let maxHeight = 30;
+    let maxWidth = 100;
+    let maxHeight = 100;
     let tmpWidth = selBox.getWidth();
     let tmpHeight = selBox.getHeight();
 
@@ -57,13 +57,13 @@ class ScreenDone extends Screen {
     let rows = 3;
     let columns = 4;
 
-    let rowGap = (360 - rows * maxHeight) / (rows + 1);
-    let columnsGap = (640 - columns * maxWidth) / (columns + 1);
+    let rowGap = (720 - rows * maxHeight) / (rows + 1);
+    let columnsGap = (1280 - columns * maxWidth) / (columns + 1);
     // console.log('RowGap: '+rowGap);
     // console.log('ColGap: '+columnsGap);
     croppedImage.onload = function (e) {
       ctx.strokeStyle = 'black';
-      ctx.strokeRect(0, 0, 640, 360);
+      ctx.strokeRect(0, 0, 1280, 720);
 
       let colPos = columnsGap;
       for (let i = 0; i < columns; i++) {
